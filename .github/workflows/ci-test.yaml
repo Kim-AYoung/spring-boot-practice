@@ -28,8 +28,8 @@ jobs:
         if: always()
         with:
           files: 'build/test-results/test/TEST-*.xml'
-      # - name: Add comments to a pull request
-      #   uses: mikepenz/action-junit-report@v3
-      #   if: always()
-      #   with:
-      #     report_paths: 'build/test-results/test/TEST-*.xml'
+      - name: Add comments to a pull request
+        uses: mikepenz/action-junit-report@v3
+        if: always()
+        with:
+          report_paths: 'build/test-results/test/TEST-*.xml'
